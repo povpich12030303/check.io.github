@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="./main.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main2">
+        <img src="./img/logo-white-removebg-preview.png" /><br />
+        <div class="main3">
+          <label>Student ID:</label><br />
+          <input type="text" required="text" /><br />
+          <label>Internship Unit:</label><br />
+          <input type="text" required="text" /><br />
+          <button class="btn">Check-In</button>
+        </div>
+        <div class="succsse">
+          <p>You check-in</p>
+          <br />
+          <p>successfully!</p>
+          <br />
+          <p>Thank You!</p>
+        </div>
+        <div class="succ">
+          <p>Developed by: Pov Pich</p>
+          <p>Major : BIT</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".succsse").hide();
+        $(".succ").hide();
+        $(".btn").click(function () {
+          $(".main3").hide();
+          $(".succsse").show();
+          $(".succ").show();
+          alert("succssfully!");
+        });
+      });
+    </script>
+  </body>
+</html>
